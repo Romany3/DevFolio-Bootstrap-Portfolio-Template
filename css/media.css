@@ -1,0 +1,97 @@
+
+/* extra small */
+@media  (max-width: 576px){
+
+    .box-i{
+        width: 30%;
+    }
+
+    .client-i{
+        width: 20% ;
+    }
+
+    .about{
+        padding-left: 3rem;
+    }
+
+    .clients{
+        background-attachment: inherit;
+    }
+
+    .carousel{
+        background-attachment: inherit;
+    }
+
+    .contact{
+        background-attachment: fixed;
+    }
+}
+
+
+
+/* sm */
+@media (min-width: 576px) and (max-width: 768px) {
+
+    .client-i{
+        width: 70% ;
+    }
+
+    .clients{
+        background-attachment: inherit;
+    }
+
+    .carousel{
+        background-attachment: inherit;
+    }
+
+    .contact{
+        background-attachment: fixed;
+    }
+}
+
+
+/* md */
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .box-i{
+        width: 35%;
+    }
+
+    .client-i{
+        width: 45% ;
+    }
+
+    .clients{
+        background-attachment: inherit;
+    }
+
+    .carousel{
+        background-attachment: inherit;
+    }
+
+    .contact{
+        background-attachment: fixed;
+    }
+}
+
+/* lg */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    .box-i{
+        width: 30%;
+    }
+
+    .client-i{
+        width: 35% ;
+    }
+}
+
+/* xl */
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+    
+
+    .client-i{
+        width: 30% ;
+    }
+}

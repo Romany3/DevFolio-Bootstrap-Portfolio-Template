@@ -1,0 +1,729 @@
+*{
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-item a {
+  position: relative;
+}
+
+.nav-item a::before{
+  content: "";
+  position: absolute;
+  color: white;
+  background-color: white;
+  left: 0;
+  bottom: 6px;
+  width: 70%;
+  height: 1px;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.4s;
+}
+
+.nav-item a:hover::before,
+.nav-link.active::before{
+  transform: scaleX(1);
+}
+.dropdown-menu li {
+position: relative;
+}
+.dropdown-menu .dropdown-submenu {
+display: none;
+position: absolute;
+left: 100%;
+top: -7px;
+}
+.dropdown-menu .dropdown-submenu-left {
+right: 100%;
+left: auto;
+}
+.dropdown-menu > li:hover > .dropdown-submenu {
+display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#home{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.448)), url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#home h1{
+  font-size: 50px;
+}
+
+.word::after{
+  content: "|";
+  color: white;
+  animation: word 10s 1s infinite;
+}
+
+@keyframes word{
+  0%{
+    content: " |";
+  }
+  1%{
+    content: " D|";
+  }
+  2%{
+    content: " De|";
+  }
+  3%{
+    content: " Des|";
+  }
+  4%{
+    content: " Desi|";
+  }
+  5%{
+    content: " Desig|";
+  }
+  6%{
+    content: " Design|";
+  }
+  7%{
+    content: " Designe|";
+  }
+  8%{
+    content: " Designer|";
+  }
+  9%{
+    content: " Designer|";
+  }
+  10%{
+    content: " Designer|";
+  }
+  11%{
+    content: " Designer|";
+  }
+  12%{
+    content: " Designer|";
+  }
+  13%{
+    content: " Designer|";
+  }
+  14%{
+    content: " Designer|";
+  }
+  15%{
+    content: " Designe|";
+  }
+  16%{
+    content: " Design|";
+  }
+  17%{
+    content: " Desig|";
+  }
+  18%{
+    content: " Desi|";
+  }
+  19%{
+    content: " Des|";
+  }
+  20%{
+    content: " De|";
+  }
+  21%{
+    content: " D|";
+  }
+  22%{
+    content: " |";
+  }
+  23%{
+    content: " D|";
+  }
+  24%{
+    content: " De|";
+  }
+  25%{
+    content: " Dev|";
+  }
+  26%{
+    content: " Deve|";
+  }
+  27%{
+    content: " Devel|";
+  }
+  28%{
+    content: " Develo|";
+  }
+  29%{
+    content: " Develop|";
+  }
+  30%{
+    content: " Develope|";
+  }
+  31%{
+    content: " Developer|";
+  }
+  32%{
+    content: " Developer|";
+  }
+  33%{
+    content: " Developer|";
+  }
+  34%{
+    content: " Developer|";
+  }
+  35%{
+    content: " Developer|";
+  }
+  35%{
+    content: " Developer|";
+  }
+  36%{
+    content: " Developer|";
+  }
+  37%{
+    content: " Develope|";
+  }
+  38%{
+    content: " Develop|";
+  }
+  39%{
+    content: " Develo|";
+  }
+  40%{
+    content: " Devel|";
+  }
+  41%{
+    content: " Deve|";
+  }
+  42%{
+    content: " Dev|";
+  }
+  43%{
+    content: " De|";
+  }
+  44%{
+    content: " D|";
+  }
+  45%{
+    content: " |";
+  }
+  46%{
+    content: " F|";
+  }
+  47%{
+    content: " Fr|";
+  }
+  48%{
+    content: " Fre|";
+  }
+  49%{
+    content: " Free|";
+  }
+  50%{
+    content: " Freel|";
+  }
+  51%{
+    content: " Freela|";
+  }
+  52%{
+    content: " Freelan|";
+  }
+  53%{
+    content: " Freelanc|";
+  }
+  54%{
+    content: " Freelance|";
+  }
+  55%{
+    content: " Freelancer|";
+  }
+  56%{
+    content: " Freelancer|";
+  }
+  57%{
+    content: " Freelancer|";
+  }
+  58%{
+    content: " Freelancer|";
+  }
+  59%{
+    content: " Freelancer|";
+  }
+  60%{
+    content: " Freelancer|";
+  }
+  61%{
+    content: " Freelancer|";
+  }
+  62%{
+    content: " Freelance|";
+  }
+  63%{
+    content: " Freelanc|";
+  }
+  64%{
+    content: " Freelan|";
+  }
+  65%{
+    content: " Freelan|";
+  }
+  66%{
+    content: " Freela|";
+  }
+  67%{
+    content: " Freel|";
+  }
+  68%{
+    content: " Free|";
+  }
+  69%{
+    content: " Fre|";
+  }
+  70%{
+    content: " Fr|";
+  }
+  71%{
+    content: " F|";
+  }
+  72%{
+    content: " |";
+  }
+  73%{
+    content: " P|";
+  }
+  74%{
+    content: " Ph|";
+  }
+  75%{
+    content: " Pho|";
+  }
+  76%{
+    content: " Phot|";
+  }
+  77%{
+    content: " Photo|";
+  }
+  78%{
+    content: " Photog|";
+  }
+  79%{
+    content: " Photogr|";
+  }
+  80%{
+    content: " Photogra|";
+  }
+  81%{
+    content: " Photograp|";
+  }
+  82%{
+    content: " Photograph|";
+  }
+  83%{
+    content: " Photographe|";
+  }
+  84%{
+    content: " Photographer|";
+  }
+  85%{
+    content: " Photographer|";
+  }
+  86%{
+    content: " Photographer|";
+  }
+  87%{
+    content: " Photographer|";
+  }
+  88%{
+    content: " Photographer|";
+  }
+  89%{
+    content: " Photographe|";
+  }
+  90%{
+    content: " Photograph|";
+  }
+  91%{
+    content: " Photograp|";
+  }
+  92%{
+    content: " Photogra|";
+  }
+  93%{
+    content: " Photogr|";
+  }
+  94%{
+    content: " Photog|";
+  }
+  95%{
+    content: " Photo|";
+  }
+  96%{
+    content: " Phot|";
+  }
+  97%{
+    content: " Pho|";
+  }
+  98%{
+    content: " Ph|";
+  }
+  99%{
+    content: " P|";
+  }
+  100%{
+    content: " |";
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.progress{
+  background-color: #cde1f8;
+  border-radius: 0;
+}
+
+.bar p{
+  padding-top: 5px;
+}
+
+
+.about h2{
+  position: relative;
+}
+
+.about h2::after{
+  content: "";
+  position: absolute;
+  background-color: rgb(0, 120, 255);
+  left: 0;
+  bottom: -15px;
+  width: 15%;
+  height: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.underline{
+  position: relative;
+}
+
+.underline::before{
+  content: "";
+  position: absolute;
+  background-color: rgb(0, 120, 255);
+  bottom: -50px;
+  width: 3%;
+  height: 5px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.box-i{
+  box-shadow: 0 0 0 10px rgb(0, 120, 255);
+  transition: all 0.5s;
+  width: 30%;
+  padding: 10%;
+}
+
+.box:hover >.box-i{
+  color: white;
+  background-color: #0d6efd;
+  box-shadow: 0 0 0 10px rgb(156, 202, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clients{
+  background-image: linear-gradient( rgba(0, 119, 255, 0.649)),url(../images/counters-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.client-i{
+  box-shadow: 0 0 0 10px white;
+  width: 30%;
+  padding: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.work-font{
+  font-size: 0.8rem;
+}
+
+.work-image img{
+  transition: all 0.8s;
+}
+
+.work-image{
+  overflow: hidden;
+}
+
+.work-text{
+  overflow: hidden;
+}
+
+.work-image img{
+  overflow: clip;
+}
+
+.work-hover:hover > .work-image img{
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel{
+  background-image: linear-gradient(rgba(0, 119, 255, 0.649)) , url(../images/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.carousel-indicators [data-bs-target]{
+  width: 10px ;
+  height: 10px ;
+  border-radius: 50%;
+  color: white;
+  text-indent: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-foot-right img{
+  width: 30px;
+  height: 30px;
+}
+
+.card-title{
+  transition: all 0.4s;
+}
+
+.card-title:hover{
+  color: #0d6efd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact{
+  background-image: linear-gradient(rgba(0, 119, 255, 0.649)) , url(../images/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact h2{
+  position: relative;
+}
+
+.contact h2::after{
+  content: "";
+  position: absolute;
+  background-color: rgb(0, 120, 255);
+  left: 0;
+  bottom: -15px;
+  width: 15%;
+  height: 3px;
+}
+
+.btn:hover{
+  box-shadow: 0 0 0 3px rgb(156, 202, 255);
+}
+
+.icons{
+  transition: all 0.3s;
+}
+
+
+.icons:hover{
+  color: white;
+  background-color: #0d6efd;
+  box-shadow: 0 0 0 3px rgb(156, 202, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+  background-color: #0062d3;
+}
+
+
+
+
+
+
+
+
+
+
+.up{
+  transition: all 0.5s;
+}
+
+.up:hover{
+  background-color: rgb(61, 138, 255) !important;
+}
